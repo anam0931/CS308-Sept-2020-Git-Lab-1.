@@ -23,11 +23,13 @@ int main(int argc, char* argv[]) {
 	int input = atoi(argv[1]);
 	if(input<0) 
 	{
-		printf("Not a valid number\n");
+		input = -input;
+		printf("Sqrt of %d is %fi\n",-input,sqrt(input));
+		printf("End of program. Exiting.\n");
 		exit(-1);
 	}
+	
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
-
 	printf("End of program. Existing.\n");
 	return(0);
 
