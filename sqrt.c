@@ -13,10 +13,14 @@ gcc sqrt.c -lm
 
 int main(int argc, char* argv[]) {
 	
-	printf("Creating conflict.\n");
+<<<<<<< HEAD
+	printf("NEGSUPPORT: Creating conflict.\n");
+=======
+	printf("NEGSUPPORT: Creating conflict\n");
+>>>>>>> br_negativeSupport
 
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("NEGSUPPORT: Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
@@ -24,13 +28,13 @@ int main(int argc, char* argv[]) {
 	if(input<0) 
 	{
 		input = -input;
-		printf("Sqrt of %d is %fi\n",-input,sqrt(input));
-		printf("End of program. Exiting.\n");
+		printf("NEGSUPPORT: Sqrt of %d is %fi\n",-input,sqrt(input));
+		printf("NEGSUPPORT: End of program. Exiting.\n");
 		exit(-1);
 	}
 	
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("End of program. Existing.\n");
+	printf("NEGSUPPORT: Sqrt of %d is %f\n",input,sqrt(input));
+	printf("NEGSUPPORT: End of program. Existing.\n");
 	return(0);
 
 } // end main
