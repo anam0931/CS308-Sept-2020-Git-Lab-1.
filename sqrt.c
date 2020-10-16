@@ -13,7 +13,7 @@ gcc sqrt.c -lm
 
 int main(int argc, char* argv[]) {
 	
-	
+	printf("Creating conflict\n");
 
 	if (argc != 2) {
 		printf("Usage: sqrt input\n\n");
